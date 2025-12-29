@@ -7,8 +7,9 @@ import { TopnavComponent } from './components/ui/topnav-component.component';
   imports: [RouterOutlet, TopnavComponent],
   template: `
     <div class="min-h-screen bg-gray-800">
-      <app-topnav ngSkipHydration />
-      <router-outlet />
+      <app-topnav ngSkipHydration>
+        <div main><router-outlet /></div>
+      </app-topnav>
     </div>
   `,
 })

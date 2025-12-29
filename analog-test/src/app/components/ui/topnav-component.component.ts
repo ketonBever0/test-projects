@@ -40,7 +40,7 @@ import {
           </ion-toolbar>
         </ion-header>
         <ion-content class="ion-padding">
-          Tap the button in the toolbar to open the menu.
+          <div class="main"><ng-content select="[main]"></ng-content></div>
         </ion-content>
       </div>
     </header>
